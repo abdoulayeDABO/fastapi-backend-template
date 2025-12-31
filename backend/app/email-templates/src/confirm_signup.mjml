@@ -1,0 +1,43 @@
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+
+        <mj-text align="center" font-size="24px" color="#000" font-weight="bold" font-family="helvetica">
+          Confirm signup
+        </mj-text>
+
+        <mj-divider border-color="#009688"></mj-divider>
+
+        <mj-text font-size="20px" color="#000" font-family="helvetica">
+          Hello @{{ user_name }}!
+        </mj-text>
+
+        <mj-text font-size="20px" color="#000" font-family="helvetica">
+          Thank you for registering with {{ app_name }}!
+        </mj-text>
+
+        <mj-text font-size="20px" color="#000" font-family="helvetica">
+          To complete your registration and activate your account, please click the button below.
+        </mj-text>
+
+        <mj-button align="center" font-size="18px" background-color="#009688" border-radius="8px" color="#fff" href="{{ link }}" padding="15px 30px">
+          Activate My Account
+        </mj-button>
+
+        <mj-text align="center" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#555">
+          This activation link will expire in {{ valid_hours }} hours.
+        </mj-text>
+
+
+        <mj-text align="center" font-size="14px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#777">
+          Or copy and paste this link into your browser:
+        </mj-text>
+
+        <mj-text align="center" font-size="12px" padding-left="25px" padding-right="25px" font-family="monospace" color="#009688">
+          <a href="{{ link }}">{{ link }}</a>
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+  </mj-body

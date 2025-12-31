@@ -1,0 +1,17 @@
+<mjml>
+  <mj-body background-color="#fafbfc">
+    <mj-section background-color="#fff" padding="40px 20px">
+      <mj-column vertical-align="middle" width="100%">
+        <mj-text align="center" padding="10px" font-size="24px" font-family="Arial, Helvetica, sans-serif" color="#333" font-weight="bold">Account Created</mj-text>
+         <mj-divider padding-bottom="25px" border-color="#009688"></mj-divider>
+        <mj-text align="center" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#555"><span>Hello !</span></mj-text>
+        <mj-text align="center" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#555">Your account has been successfully created. Here are your login credentials:</mj-text>
+        <mj-text align="center" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#333"><strong>Username:</strong> {{ user_name }}</mj-text>
+        <mj-text align="center" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#333"><strong>Password:</strong> {{ password }}</mj-text>
+        <mj-button align="center" font-size="18px" background-color="#009688" border-radius="8px" color="#fff" href="{{ login_link }}" padding="15px 30px">Login Now</mj-button>
+        <mj-text align="center" font-size="14px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#d32f2f">We recommend changing your password after your first login.</mj-text>
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

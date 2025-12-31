@@ -1,0 +1,15 @@
+<mjml>
+  <mj-body background-color="#fafbfc">
+    <mj-section background-color="#fff" padding="40px 20px">
+      <mj-column vertical-align="middle" width="100%">
+        <mj-text align="center" padding="10px" font-size="24px" font-weight="bold" color="#333">Account Activation</mj-text>
+          <mj-divider padding-bottom="25px" border-color="#009688"></mj-divider>
+        <mj-text align="center" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#000"><span>Welcome! Please activate your account to get started.</span></mj-text>
+        <mj-text align="center" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#000">Your account has been created with the following details:</mj-text>
+        <mj-text align="center" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#000">Username: {{ user_name }}</mj-text>
+        <mj-text align="center" font-size="16px" padding-left="25px" padding-right="25px" font-family="Arial, Helvetica, sans-serif" color="#000">This activation link will expire in {{ valid_hours }} hours.</mj-text>
+        <mj-button align="center" font-size="18px" background-color="#009688" border-radius="8px" color="#fff" href="{{ link }}" padding="15px 30px">Activate your account</mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
