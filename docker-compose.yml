@@ -58,8 +58,9 @@ services:
   backend:
     image: '${DOCKER_IMAGE_BACKEND?Variable not set}:${TAG-latest}'
     restart: always
-    ports:
-      - "8000:8000"
+    # Uncomment the following lines to expose the backend service directly (for development purposes)
+    # ports:
+    #   - "8000:8000"
     networks:
       - app-network
     depends_on:
@@ -113,7 +114,7 @@ services:
       - nginx-logs:/var/log/nginx
       # - /etc/letsencrypt:/etc/letsencrypt:ro
       # Auto-signed certificate (to be used only in development)
-      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - /etc/nginx/ssl:/etc/nginx/ssl:ro
 
 
 networks:
