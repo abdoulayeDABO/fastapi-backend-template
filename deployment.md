@@ -14,7 +14,7 @@ But you have to configure a couple things first. 🤓
 
 ## Recommendation
 
-Use non root user for deployment.
+⚠️ Use non root user for deployment.
 
 ## Step 1: Clone the Repository
 
